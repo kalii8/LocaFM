@@ -7,6 +7,7 @@ require_once '../config/app.php';
 require_once '../vendor/kalii8/MVC/routing.php';
 require_once '../vendor/kalii8/MVC/db.php';
 require_once '../app/Song.php';
+require_once '../app/Author.php';
 
 //routing
 //GET method

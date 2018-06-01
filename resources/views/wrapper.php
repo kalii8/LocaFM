@@ -12,8 +12,10 @@
 <div class="container">
 <h1 style="color: red" class="title">Loca FM la mejor musica</h1>
 <a href="<?= $site_url ?>/public/?page=index">Home</a>
-<a href="<?= $site_url ?>/public/?page=list">Administrator List</a>
-<a href="<?= $site_url ?>/public/?page=user">User List</a>
+<a href="<?= $site_url ?>/public/?page=list">Administrator Song List</a>
+<a href="<?= $site_url ?>/public/?page=user">User Song List</a>
+<a href="<?= $site_url ?>/public/?page=authorform">Administrator Author List</a>
+<a href="<?= $site_url ?>/public/?page=authorlist">User Author List </a>
 </div>
 <?php include $content; ?>
 

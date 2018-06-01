@@ -6,7 +6,6 @@
 </div>
         <div class="author">
         <?= $song->author ?> <br>
-        <a href="<?= $site_url ?>/public/?page=video&id=<?=$song->id?>">Play</a>
         </div>
     </div>
 </div>

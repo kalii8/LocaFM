@@ -5,6 +5,8 @@
     <ul>
     <li><a href="<?= $site_url ?>/public/?page=form">Add a new song</a></li>
     <li><a href="<?= $site_url ?>/public/?page=list">Display list of songs</a></li>
+    <li><a href="<?= $site_url ?>/public/?page=authorform">Add a new author</a></li>
+    <li><a href="<?= $site_url ?>/public/?page=authorlist">Author list</a></li>
    </ul>
 </div>
 
