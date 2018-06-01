@@ -53,7 +53,7 @@ class FormController
             $song->save();
     
             // redirect
-            header('Location: /hackathon%203/public/?page=form&id='. $song->id);
+            header('Location: /LocaFM/public/?page=form&id='. $song->id);
     
         }
     }
