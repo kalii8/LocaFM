@@ -1,3 +1,4 @@
+<div class="contain">
 <form action="" method="POST">
    Name<input type="text" id="name" name="name" value="<?= $song->name; ?>">  <br />
    Code<input type="text" id="code" name="code" value="<?= $song->code; ?>">  <br />
@@ -5,3 +6,10 @@
     <input type="submit" value="Save/Update">
 
 </form>
+</div>
+<style>
+.contain{
+    margin: auto;
+    width: 20%;
+}
+</style>

@@ -29,7 +29,7 @@ class IndexController
 
 
     $song = \app\Song::find(1);
-    var_dump($song);
+    // var_dump($song);
  
     // when we are ready with setup, include the wrapper
     include __DIR__ . '/../../../resources/views/wrapper.php';

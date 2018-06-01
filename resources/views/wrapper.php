@@ -9,14 +9,20 @@
     <script src="main.js"></script>
 </head>
 <body>
-<h1 style="color: red">Loca FM la mejor musica</h1>
+<div class="container">
+<h1 style="color: red" class="title">Loca FM la mejor musica</h1>
 <a href="<?= $site_url ?>/public/?page=index">Home</a>
 <a href="<?= $site_url ?>/public/?page=list">Administrator List</a>
 <a href="<?= $site_url ?>/public/?page=user">User List</a>
-
+</div>
 <?php include $content; ?>
 
+<!-- <style>
+.container{
+    display: flex;
+}
+</style> -->
 
-    
+
 </body>
 </html>

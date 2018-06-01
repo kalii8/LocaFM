@@ -22,7 +22,7 @@ class VideoController
         // edit
         $song = Song::find($_GET['id']);
     }
-    var_dump($song);
+    // var_dump($song);
     
     include __DIR__ . '/../../../resources/views/wrapper.php'; 
 }
