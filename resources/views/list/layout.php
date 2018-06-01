@@ -10,7 +10,7 @@
         <div class="author">
         <?= $song['author'] ?>
         <a href="<?php $site_url ?>http://www.cbp-exercises.test/week6/day30/LocaFM/public/?page=form&id=<?=$song['id']?>">Edit</a>
-        <a href="<?php $site_url ?>http://www.cbp-exercises.test/week6/day30/LocaFM/public/?page=delete&id=<?=$song['id']?>">Edit</a>
+        <a href="<?php $site_url ?>http://www.cbp-exercises.test/week6/day30/LocaFM/public/?page=delete&id=<?=$song['id']?>">Delete</a>
         </div>
     </div>
 </div>
@@ -28,8 +28,5 @@
 .name {
         text-align: center;
     }
-img{
-    height: 200px;
-    width: 130px;
-}
+
 </style>
