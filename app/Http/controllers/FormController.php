@@ -53,7 +53,7 @@ class FormController
             $song->save();
     
             // redirect
-            header('Location: /?page=form&id='. $song->id);
+            header('Location: http://www.cbp-exercises.test/hackathon%203/public/?page=form&id='. $song->id);
     
         }
     }
