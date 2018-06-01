@@ -16,6 +16,7 @@ class DeleteController
         }
 
         $song->delete();
+        header('Location: /LocaFM/public/?page=list&id='. $song->id);
     
         include __DIR__ . '/../../../resources/views/wrapper.php'; 
     }
