@@ -9,8 +9,8 @@
         <div class="code"><?= $song['code'] ?></div>
         <div class="author">
         <?= $song['author'] ?>
-        <a href="<?php $site_url ?>/LocaFM/public/?page=form&id=<?=$song['id']?>">Edit</a>
-        <a href="<?php $site_url ?>/LocaFM/public/?page=delete&id=<?=$song['id']?>">Delete</a>
+        <a href="<?php $site_url ?>LocaFM/public/?page=form&id=<?=$song['id']?>">Edit</a>
+        <a href="<?php $site_url ?>LocaFM/public/?page=delete&id=<?=$song['id']?>">Delete</a>
         </div>
     </div>
 </div>
