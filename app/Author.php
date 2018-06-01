@@ -5,32 +5,32 @@ use \kalii8\MVC\db\db;
 use PDO;
 
 /**
- * represents one row in table `product`
+ * represents one row in table `author`
  */
 
-class Song
+class Author
 {
     public $id = null;
     public $name = null;
-    public $code = null;
-    public $author = null;
-    public $auhor_id = null;
+    public $yob = null;
+    public $bio = null;
+    public $photo = null;
     
     public function insert()
     {
         $query = "
             INSERT
-            INTO `song`
-            (`name`, `code`,`author`)
+            INTO `author`
+            (`name`, `yob`,`bio`, `photo`)
             VALUES
-            (?, ?, ?)
+            (?, ?, ?, ?)
         ";
 
         $values = [
             $this->name,
-            $this->code,
-            $this->author,
- 
+            $this->yob,
+            $this->bio,
+            $this->photo,
         ];
 
         db::query($query, $values);
@@ -42,18 +42,20 @@ class Song
     public function update()
     {
         $query = "
-            UPDATE `song`
+            UPDATE `author`
             SET `name` = ?,
-                 `code` = ?,
-                 `author` = ?
+                 `yob` = ?,
+                 `bio` = ?,
+                 `photo` = ?
                 
             WHERE `id` = ? 
         ";
 
         $values = [
             $this->name,
-            $this->code,
-            $this->author,
+            $this->yob,
+            $this->bio,
+            $this->photo,
             $this->id
         ];
 
@@ -65,7 +67,7 @@ class Song
     {
         $query = "
             DELETE
-            FROM `song` 
+            FROM `author` 
             WHERE `id` = ?      
         ";
 
@@ -91,7 +93,7 @@ class Song
     {
         $query = "
             SELECT *
-            FROM `song`
+            FROM `author`
             WHERE `id` = ?
         ";
 
