@@ -15,20 +15,18 @@ require_once '../app/Song.php';
 //http://www.eshop.test/?page=category - handle by category controller
 
 $controller_name = \kalii8\mvc\routing\getControllerFromUrl();
-$controller_class = '\\app\\Http\\controllers\\' . ucfirst(strtolower($controller_name)) . 'Controller';
+
+$controller_class = ucfirst(strtolower($controller_name)) . 'Controller';
 
 //require the right controller file
 
-require '..' . $controller_class . '.php';
+require '../app/Http/controllers/' . $controller_class . '.php';
 
 //$controller_class = $controller_class;
+$controller_class = '\\app\\Http\\controllers\\' . $controller_class;
 
 //create controller object
-
 $controller = new $controller_class();
 
 //run the controller
-
 $controller->index();
-
-var_dump($controller);

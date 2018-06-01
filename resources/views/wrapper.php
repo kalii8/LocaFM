@@ -11,9 +11,12 @@
 <body>
 <h1 style="color: red">Loca FM la mejor musica</h1>
 <a href="<?= $site_url ?>/public/?page=index">Home</a>
-<a href="<?= $site_url ?>/public/?page=list">List of songs</a>
+<a href="<?= $site_url ?>/public/?page=list">Administrator List</a>
+<a href="<?= $site_url ?>/public/?page=user">User List</a>
 
 <?php include $content; ?>
+
+
     
 </body>
 </html>
