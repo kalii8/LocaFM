@@ -10,6 +10,8 @@
 </head>
 <body>
 <h1 style="color: red">Loca FM la mejor musica</h1>
+<a href="<?= $site_url ?>/hackathon%203/public/?page=index">Home</a>
+<a href="<?= $site_url ?>/hackathon%203/public/?page=list">List of songs</a>
 
 <?php include $content; ?>
     
