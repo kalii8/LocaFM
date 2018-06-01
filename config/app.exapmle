@@ -1,0 +1,9 @@
+<?php
+
+define('SITE_URL', '');
+
+//DB credentials
+define('DB_HOST', 'localhost');
+define ('DB_NAME', 'songs');
+define('DB_USER', 'root');
+define('DB_PASS', 'rootroot');
